@@ -5,7 +5,11 @@
     }
     body{
         font-family: 'outfit';
+<<<<<<< HEAD
         background: linear-gradient(#b71500,#323232);
+=======
+        background: linear-gradient(#ff1e00,#000000);
+>>>>>>> 14bca3aaaf5baf6cc8ba948d6d21e10b5a6d6bf9
     }
     .contact-container{
         height: 100vh;
@@ -51,11 +55,18 @@
     .contact-inputs:focus{
         border: 2px solid #000000;
     }
+<<<<<<< HEAD
+=======
+    .contact-inputs::placeholder{
+        color: #ff0000;
+    }
+>>>>>>> 14bca3aaaf5baf6cc8ba948d6d21e10b5a6d6bf9
     .contact-left button{
         display: flex;
         align-items: center;
         padding: 15px 30px;
         font-size: 16px;
+<<<<<<< HEAD
         color: #000000;
         gap: 10px;
         border: solid 2px #000000;
@@ -113,6 +124,15 @@
     }
         
     
+=======
+        color: #ffffff;
+        gap: 10px;
+        border: none;
+        border-radius: 50px;
+        background: linear-gradient(270deg,#000000,#ff002f);
+        cursor: pointer;
+    }
+>>>>>>> 14bca3aaaf5baf6cc8ba948d6d21e10b5a6d6bf9
     .contact-left button img{
         height: 15px;
     }
