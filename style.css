@@ -27,12 +27,10 @@ nav {
 }
 
 .logo {
-
     text-decoration: none;
     height: 100px;
     width: 100px;
     display: flex;
-
 }
 
 nav ul {
@@ -61,6 +59,7 @@ nav ul li a.active {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 140px; /* Offset for fixed header */
 }
 
 .hero-content h1 {
@@ -97,18 +96,41 @@ nav ul li a.active {
     color: #b0b0b0;
 }
 
-
-/* asset-section */
-
+/* Asset List Section */
 .asset-list {
-padding-left: 400px;
-padding-right: 400px;
-text-align: center;
-text-decoration: none;
-margin: 30px;
-
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px; /* Spacing between hero and asset list */
 }
 
+.asset-list h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ff1e00;
+    margin-bottom: 30px;
+}
+
+.asset-list ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.asset-list li {
+    font-size: 18px;
+    color: #b0b0b0;
+    background: #1a1a1a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.asset-list li:hover {
+    transform: translateY(-5px);
+    background: #2a2a2a;
+}
 
 /* Features Section */
 #features {
@@ -323,5 +345,23 @@ footer p {
     .download-buttons {
         flex-direction: column;
         gap: 10px;
+    }
+
+    #home {
+        padding-top: 160px; /* Adjust for header on smaller screens */
+    }
+
+    .asset-list {
+        padding: 20px 10px;
+        margin-top: 20px; /* Reduced spacing for mobile */
+    }
+
+    .asset-list h1 {
+        font-size: 28px;
+    }
+
+    .asset-list li {
+        font-size: 16px;
+        padding: 10px;
     }
 }
