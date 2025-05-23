@@ -96,7 +96,7 @@ nav ul li a.active {
     color: #b0b0b0;
 }
 
-/* Asset List Section */
+/* Asset List Section (Restored) */
 .asset-list {
     padding: 40px 20px;
     text-align: center;
@@ -132,15 +132,46 @@ nav ul li a.active {
     background: #2a2a2a;
 }
 
+/* Game List Section (New Class) */
+.game-list {
+    padding: 25px;
+    padding-top: px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #ff1e00; /* Subtle red border */
+    border-radius: 15px;
+    background: linear-gradient(to right, #2a2a2a, #1a1a1a); /* Gradient background */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+.game-list ul {
+    list-style: none; /* Remove bullet points */
+    padding-top: 200px;
+}
+
+.game-list li {
+    font-size: 18px;
+    color: #b0b0b0;
+    padding-top: 2px;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background: transparent; /* Inherit gradient from parent */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
 .credits-list {
     padding: 20px;
     margin-top: 20px;
     color: #b0b0b0;
     text-decoration: none;
 }
+
 .credits-list:hover {
     color: #ff1e00;
-    
 }
 
 /* Features Section */
@@ -150,6 +181,7 @@ nav ul li a.active {
 }
 
 .container {
+    padding-top: 200px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -374,5 +406,20 @@ footer p {
     .asset-list li {
         font-size: 16px;
         padding: 10px;
+    }
+
+    .game-list {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .game-list h1 {
+        font-size: 28px;
+    }
+
+    .game-list li {
+        font-size: 16px;
+        padding: 10px 15px;
+        margin: 10px 0;
     }
 }
