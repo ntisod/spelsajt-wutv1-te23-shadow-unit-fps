@@ -140,7 +140,6 @@ nav ul li a.active {
 }
 .credits-list:hover {
     color: #ff1e00;
-    
 }
 
 /* Features Section */
@@ -323,6 +322,23 @@ footer p {
 
 .social-links a:hover {
     color: #ff1e00;
+}
+
+/* Error and Success Messages */
+.error {
+    color: #ff1e00;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.success-message {
+    color: #ffffff;
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Responsive Design */
